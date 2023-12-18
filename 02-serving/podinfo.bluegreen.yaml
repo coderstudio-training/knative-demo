@@ -1,0 +1,23 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  namespace: default
+  name: podinfo
+spec:
+  template:
+    spec:
+      containers:
+        - image: ghcr.io/stefanprodan/podinfo:6.5.4
+          env:
+            - name: PODINFO_UI_COLOR
+              value: "#AFE1AF"
+          ports:
+            - containerPort: 9898
+              protocol: TCP
+  traffic:
+    - latestRevision: false
+      revisionName: podinfo-00001
+      percent: 50
+    - latestRevision: false
+      revisionName: podinfo-00002
+      percent: 50
