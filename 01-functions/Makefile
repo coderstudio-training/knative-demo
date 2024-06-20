@@ -1,7 +1,7 @@
 FUNC_NAME=my-first-function 
 
 create-function:
-	func create -l python ${FUNC_NAME}
+	kn func create -l python ${FUNC_NAME}
 
 setup-python-env:
 	eval "$(pyenv init -)"
