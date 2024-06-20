@@ -1,7 +1,7 @@
 FUNC_NAME=my-event-function 
 
 create-function:
-	func create -l python ${FUNC_NAME}
+	kn func create -l python ${FUNC_NAME}
 
 copy-func-py:
 	cp ./func.py ./${FUNC_NAME}
