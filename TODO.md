@@ -12,15 +12,16 @@
 
 Install system:
 
-- [ ] Install knative serving https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/
-- [ ] Install knative eventing https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/
+- [ ] Install knative serving - https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/
+- [ ] Install knative eventing - https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/
+- [ ] or Install via Knative Operator - kubectl apply -f https://github.com/knative/operator/releases/download/knative-v1.14.3/operator.yaml
 - Install CLIs:
   - [ ] Install `kn` cli https://knative.dev/docs/client/install-kn/
   - [ ] Intall `func` cli https://knative.dev/docs/getting-started/install-func/
 
 ## Deploy a knative Function
 
-- [ ] create function (https://knative.dev/docs/functions/creating-functions/)
+- [ ] create function - https://knative.dev/docs/functions/creating-functions/
 - [ ] explore generated files https://github.com/boson-project/parliament
 
 ## Deploy a knative Service
